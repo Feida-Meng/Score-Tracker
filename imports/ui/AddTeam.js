@@ -16,7 +16,7 @@ export default class AddTeam extends React.Component {
   }
   render() {
     return (
-      <form onSubmit= { this.handleSubmit }>
+      <form onSubmit= { this.handleSubmit.bind(this) }>
         <input type = 'text' name = 'teamName' placeholder = "Team Name"/>
         <button>Add Team</button>
       </form>
