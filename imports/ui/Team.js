@@ -1,5 +1,6 @@
 import React from 'react';
 import {Teams} from './../api/teams';
+import PropTypes from 'prop-types';
 
 export default class Team extends React.Component {
 
@@ -26,6 +27,8 @@ export default class Team extends React.Component {
     );
   }
 
+}
 
-
+Team.propTypes = {
+  team: PropTypes.object.isRequired
 }

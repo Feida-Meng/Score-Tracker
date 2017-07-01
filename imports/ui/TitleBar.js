@@ -7,7 +7,7 @@ export default class TitleBar extends React.Component {
 
     return (
       <div>
-        <h1> Score Trackor {this.props.title}</h1>
+        <h1> Sports Score Trackor {this.props.title}</h1>
       </div>
 
     );
