@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class TitleBar extends React.Component {
 
@@ -6,7 +7,7 @@ export default class TitleBar extends React.Component {
 
     return (
       <div>
-        <h1> Score Trackor </h1>
+        <h1> Score Trackor {this.props.title}</h1>
       </div>
 
     );
