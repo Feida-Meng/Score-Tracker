@@ -16,7 +16,6 @@ export default class TeamList extends React.Component {
 
   render() {
     return (
-
       <div>
         {this.renderTeams()}
       </div>
