@@ -17,11 +17,13 @@ export default class Team extends React.Component {
   }
 
   render() {
+
+    let teamClassName = `team list-item list-item__rank-${this.props.team.rank}`;
     return (
-      <div className = 'list-item team' key = {this.props.team._id}>
+      <div className = {teamClassName} key = {this.props.team._id}>
         <div>
           <h3 className = 'team__name'> {this.props.team.name} </h3>
-          <p className = 'team__stats'>  {this.props.team.position}, {this.props.team.score} point(s). </p>
+          <p className = 'team__stats'>  {this.props.team.position} place, {this.props.team.score} point(s). </p>
         </div>
         <div className = 'team__actions'>
           <button className = 'button button--round' onClick = {this.addPoints.bind(this)} > +1 </button>
