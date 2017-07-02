@@ -10,7 +10,11 @@ export default class TeamList extends React.Component {
         return <Team key = {team._id} team = {team}/>;
       });
     } else {
-      return (<p> Add your first team to start tracking! </p> );
+      return (
+        <div className = 'list-item'>
+          <p className = 'list-item__empty'> Add your first team to start tracking! </p>
+        </div>
+      );
     }
   }
 
