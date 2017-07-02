@@ -1,5 +1,6 @@
 import React from 'react';
 import Team from './Team';
+import FlipMove from 'react-flip-move';
 
 export default class TeamList extends React.Component {
 
@@ -21,7 +22,9 @@ export default class TeamList extends React.Component {
   render() {
     return (
       <div>
-        {this.renderTeams()}
+        <FlipMove maintainContainerHeight={true} duration={750} easing="ease-out">
+          {this.renderTeams()}
+        </FlipMove>
       </div>
     );
   }
