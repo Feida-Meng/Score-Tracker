@@ -15,8 +15,10 @@ export default class App extends React.Component {
     return (
       <div>
         <TitleBar/>
-        <TeamList teams = {this.teams()}/>
-        <AddTeam/>
+        <div className = 'wrapper'>
+          <TeamList teams = {this.teams()}/>
+          <AddTeam/>
+        </div>
       </div>
     );
   }
