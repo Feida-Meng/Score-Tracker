@@ -8,7 +8,7 @@ import {Teams} from './../api/teams';
 export default class App extends React.Component {
 
   teams() {
-    return Teams.find().fetch();
+    return Teams.find({},{sort:{score:-1,name:1}}).fetch();
   }
 
   render() {
