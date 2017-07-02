@@ -18,11 +18,16 @@ export default class Team extends React.Component {
 
   render() {
     return (
-      <div className = 'list-item' key = {this.props.team._id}>
-        <p> {this.props.team.name} has {this.props.team.score} point(s). </p>
+      <div className = 'list-item team' key = {this.props.team._id}>
+        <div>
+          <h3 className = 'team__name'> {this.props.team.name} </h3>
+          <p className = 'team__stats'>  has {this.props.team.score} point(s). </p>
+        </div>
+        <div className = 'team__actions'>
           <button className = 'button button--round' onClick = {this.addPoints.bind(this)} > +1 </button>
           <button className = 'button button--round' onClick = {this.removePoints.bind(this)} > -1 </button>
           <button className = 'button button--round button--remove' onClick = {this.removeTeam.bind(this)} > X </button>
+        </div>
       </div>
     );
   }
