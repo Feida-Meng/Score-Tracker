@@ -1,7 +1,7 @@
 import {Mongo} from 'meteor/mongo';
+import numeral from 'numeral';
 
 export const Teams = new Mongo.Collection('teams');
-
 export const teamRanks = (players) => {
   let rank = 1;
   return players.map( (player, index) => {
@@ -11,7 +11,8 @@ export const teamRanks = (players) => {
 
     return {
       ...player,
-      rank
+      rank,
+      position: numeral(rank).format('0o')
     };
   });
 };
