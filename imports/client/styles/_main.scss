@@ -18,6 +18,10 @@ body {
   font-size: 1.6rem;
 }
 
+input, button, select {
+  font-size: 1.3rem;
+}
+
 h1 {
   font-weight: 300;
   font-size: 4rem;
@@ -28,3 +32,4 @@ h1 {
 @import './components/list-item';
 @import './components/button';
 @import './components/team';
+@import './components/form';
