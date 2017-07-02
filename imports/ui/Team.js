@@ -20,9 +20,9 @@ export default class Team extends React.Component {
     return (
       <div className = 'list-item' key = {this.props.team._id}>
         <p> {this.props.team.name} has {this.props.team.score} point(s). </p>
-          <button onClick = {this.addPoints.bind(this)} > +1 </button>
-          <button onClick = {this.removePoints.bind(this)} > -1 </button>
-          <button onClick = {this.removeTeam.bind(this)} > X </button>
+          <button className = 'button button--round' onClick = {this.addPoints.bind(this)} > +1 </button>
+          <button className = 'button button--round' onClick = {this.removePoints.bind(this)} > -1 </button>
+          <button className = 'button button--round button--remove' onClick = {this.removeTeam.bind(this)} > X </button>
       </div>
     );
   }

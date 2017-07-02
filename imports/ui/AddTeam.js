@@ -20,7 +20,7 @@ export default class AddTeam extends React.Component {
       <div className = 'list-item'>
         <form onSubmit= { this.handleSubmit.bind(this) }>
           <input type = 'text' name = 'teamName' placeholder = "Team Name"/>
-          <button>Add Team</button>
+          <button className = 'button'>Add Team</button>
         </form>
       </div>
     );
